@@ -1,0 +1,291 @@
+// Application title
+appTitle::clearBudget
+
+// Page titles
+pageTitle_Home::Anasayfa
+pageTitle_Error::İşlem Hatası (Processing Error)
+pageTitle_Backup::Veri Yedekleme
+pageTitle_ReportMain:: Bütçe Raporu
+pageTitle_Overview:: Genel Aylık Aktivite
+pageTitle_UploadQif:: Veri dosyanızı seçiniz
+pageTitle_UploadQfx:: Veri dosyanızı seçiniz
+pageTitle_FileItems:: İşlemleri kategorize edin
+pageTitle_Debits::Borçlara genel bakış
+pageTitle_Credits::Alacaklara genel bakis
+pageTitle_Search:: Arama sonuçları
+pageTitle_EditItem::İşlem düzenleme
+pageTitle_ReportMainGraph:: Grafiklere genel bakış
+pageTitle_accountSettings:: Hesap ayarları
+pageTitle_defaultAccountSettings::
+pageTitle_userAccountSettings::
+pageTitle_setupAccountSettings::CleaerBudget'a  hoşgeldiniz. - Lütfen bu sayfayı uygulamayı kurmak için kullanınız.
+pageTitle_setupAccountSettingsTitle::Kişisel tercihlerinizi aşağıda belirtiniz.
+pageTitle_editCategories:: Kategori düzenleme
+pageTitle_editKeywords::Anahtar sözcükleri düzenleme
+pageTitle_AutoFileItems::İşlemlerin Otomatik Kategorizasyonu
+pageTitle_uploadsManagement::Yüklenen dosyalar ve işlemler yönetimi
+pageTitle_UploadCSV::Dosyalarından yükle işlemleri CSV
+
+// navigation and links
+link_WizardStep1::Kategoriler
+link_WizardStep2::İşlemler
+link_WizardStep3::Anahtar kelimeler
+link_WizardStep4::Otomatik işlem kategorizasyonu
+link_categorizeItem::İşlemleri kategorize edin
+link_editCategory::Kategorileri düzenleme
+link_debits::Borçlar
+link_credits::Alacaklar
+link_overview::Genel bakış
+link_SetLanguage_gr-GR::Ελληνικά
+link_SetLanguage_fr-FR::Français
+link_SetLanguage_en-US::English
+link_SetLanguage_es-ES::Español
+link_SetLanguage_tr-TR::Türkçe
+link_SetLanguage_pt-BR::Português Brasileiro
+link_uploadQif::yük dosyası QIF
+link_uploadQfx::yük dosyası QFX
+link_uploadManual::İşlemler ekle
+link_menuAccount::Hesap
+link_menuActions::Araçlar
+link_menuReports::Raporlar
+link_ReportUnfiledCount::Kategorize edilmemiş işlmeler
+link_pageBackup::Yedekleme
+link_pageSettings::Ayarlar
+link_autoSortLong::Otomatik olarak kategorize etmek ister misiniz?
+link_autoSort::Otomatik işlem kategorizasyonu
+link_save::Kaydet
+link_back::Geri
+link_Graph::Grafik
+link_menuCategorizeItems:: Lütfen operasyonlarınızı kategorize ediniz.
+link_pickInTheList::Birini seçiniz...
+link_pickaDate::Raporların zaman aralığı
+link_solveErrorLink:: Bu hatayı çözmek için buraya tıklayınız.
+link_editCategories::Kategorileri düzenleme
+link_editKeywords::Anahtar sözcükleri düzenleme
+link_addKeyword::Anahtar sözcükleri eklemek
+link_backupDB::Veritabanı yedekleme
+link_logout::Oturumu kapatınız
+link_contact::İletişim
+link_CreateAccount:: Hesap yaratın
+link_manageUploads::Yönetmek dosya yükleyin
+link_checkPreviousVersion::Kontrol Güncelleştirmeleri
+link_cleanForm::Temizlik Formu
+link_keywordSuggestor::Anahtar kelimeler öneriler
+link_menuWizard::Wizard
+link_uploadCSV::yük dosyası CSV
+link_delete::Silmek
+linkText_breakTransactionLink::Break Bu işlem aşağı
+linkText_taskReminderLink::Bir hatırlatma bu işlem dayalı ekle
+linkText_editReportSetting::Değiştir bu rapor ayarlarını
+linkText_addReportSetting::Build yeni bir rapor
+linkText_deleteReportSetting::Silmek için bu rapor ayarlarını
+linkText_printReport::Print Bu raporu
+linkText_listCategoryItem::Bu kategorideki işlemler bak
+linkText_listCategoryMonthItem::Bu kategoride bu ay için işlemleri bakın
+linkText_editCategorySettings::Değiştir Bu kategori ayarlarını
+linkText_taskReminderEditLink::Ekle/Düzenle hatırlatmalar
+linkText_taskEditLink::Değiştir bu işlem
+linkText_chooseReport::Bir rapor seçin:
+link_monthlyTransactions::Aylık İşlemleri
+
+// Table titles
+tableTitle_debit::Aylık ve Kategori dağılımıyla toplam borçlar
+tableTitle_credit::Aylık ve Kategori dağılımıyla toplam alacaklar
+tableTitle_overview::İşlemlerin özeti
+tableTitle_search::Arama sonuçları
+tableTitle_transactions::İşlemlerin listesi
+tableTitle_backup::Yedekleme opsiyonlari
+tableTitle_AutoFileItems::Otomatik kategorizasyon
+tableTitle_AddManualTransaction::Manuel İşlemleri ekle
+tableTitle_breakTransaction::Break işlemleri
+tableTitle_taskSchedulerAdd::Ekle/Düzenle hatırlatmalar
+tableTitle_taskSchedulerEdit::Aktif Hatırlatmalar
+tableTitle_MonthlyTransactions:: Aylık İşlemleri
+tableTitle_MonthlAvailable::Mevcut Ay
+
+// Errors
+error_UploadQif::Dosyayı yüklerken hata oluştu
+error_ImproperQifFile::Dosya geçerli bir QIF dosyası değildir.
+error_ImproperQifFile2::Dosya geçerli bir QIF dosyas? değildir. (tip 2)
+error_ImproperQifFile3::Dosya geçerli bir QIF dosyas? değildir. (tip 3)
+error_ImproperQifFile4::Tarihleri doğru oluşmuş değildir. Lütfen tarih biçimini değiştirmek ve yeniden deneyin deneyin (type 4)
+error_ImproperQifFile5::Ithal olarak var yalnızca kayıtları çoğaltmak başarısız
+error_ImproperQfxFile::Dosya geçerli bir QFX dosyası değildir.
+error_ImproperQfxFile2::Dosya geçerli bir QFX dosyas? değildir. (tip 2)
+error_ImproperQfxFile3::Dosya geçerli bir QFX dosyas? değildir. (tip 3)
+error_ImproperQfxFile4::Dosya geçerli bir QFX dosyas? değildir. (tip 4)
+error_ImproperCall::Sunucuya erişim doğru değil, lütfen tekrar deneyin.
+error_UnknownError::Bilinmeyen hata oluştu. 
+error_NoTransactionData::Hiçbir işlem vardır >>> Kurulum işlemleri için  <a href="#wizard">sihirbaz</a> izleyin
+error_BadCategoryName::Kategori ismi seçilmelidir.
+error_BadCategoryMaxAmountPerMonth::Maksimum miktar sıfırdan büyük sayısal bir değer olmalıdır.
+error_CategoryIsMandatory::Bu işlem için bir kategori seçmelisiniz
+error_GenericError::Hata
+error_GenericWarning::Uyarı
+error_MissingMandatoryUserSettings::Dil ve para birimi seçimi mecburidir.
+error_InvalidUsernameOrPassword::Kullanıcı adı/ email adresi  ve/veya şifreniz geçersiz. (en az 6 karakterden olu?mal?d?r.)
+error_InvalidUsername::Kullanıcı adı/ email adresi geçersiz. (en az 6 karakterden olu?mal?d?r.)
+error_InvalidPassword::Şifreniz geçersizdir. (en az 6 karakterden olu?mal?d?r.)
+error_InvalidLanguage::The language you selected is unknown, please select a correct language
+error_PleaseLogin::Uygulamaya ulaşmak için oturumu başlatmanız (giriş yapmanız) gerekiyor.
+error_BadUsernameOrPassword::Kullanıcı adı/ email adresi  ve/veya şifreniz geçersiz.
+error_UserSettingsSuccess::Degişiklik başarıyla kaydedildi.
+error_searchForString:: Sonuçlar: 
+error_BadKeyword::Anahtar kelimeler boş olamaz.
+error_BadSearchTerms:: Arama kelimeleri en az 3 karakter uzunlu?unda ya da rakam olmak zorundadır.
+error_successLogout::Oturumu kapattınız.
+error_successLogin::Şimdi kaydediliyor
+error_SaveKeywordFailure:: Kaydederken bir hata oluştu. Anahtar kelimenizin daha önce kaydedilmemiş olduğunu kontrol eder misiniz? 
+error_YouAreLoggedOut::Oturumun süresi doldu, sistemden çıktınız.
+setupSuccess::ClearBudget sizin kullamınıza tamamen hazırdır. İyi eğlenceler!
+error_MustGiveCurrentPassword::Lütfen mevcut şifrenizi giriniz.
+error_noCategoriesYet::Lütfen kurulum bazı kategoriler.
+error_ImproperDate::Tarih, değiştirmek lütfen tekrar deneyin geçersiz.
+error_ImproperAmount::Lütfen geçerli bir tutarı girin
+error_ImproperComment::Lütfen geçerli bir yorum girin
+error_ImproperPayee::Lütfen geçerli bir Alacaklar girin
+error_noSuggestionFound::Hiçbir anahtar kelime önerileri (sadece kelimelerin görünmesini %d%% bulundu veya işlemlerinizin daha gösterilecek)
+error_ReportWrongName::Lütfen geçerli bir rapor adı belirtiniz
+error_ReportPickType::Lütfen bir tarih aralığı seçin
+error_ReportWrongRange::Seçtiğiniz aralığı geçersiz, maksimum 12 aydır
+error_ReportRangeTooLarge::Seçtiğiniz aralığı geçersiz, maksimum 12 aydır
+error_ReportWrongDateRange::Seçtiğiniz aralığı geçersiz, maksimum 12 aydır
+error_ReportStartDateAfterEndDate::Başlangıç tarihi bitiş tarihinden sonra, doğru ve lütfen tekrar deneyin olamaz
+error_ReportPickDebitCredit::Lütfen eklemek işlemlerin türünü göstermek
+error_ReportWrongCategories::Lütfen en az bir kategori gösterir
+error_ReportSettingsTooStrict::Ayarlarınızı çok katıdır ve herhangi bir sonuç geri getirmek değil, daha fazla kategori ekleyin veya tarih aralığını uzatmak
+error_noReportData::Hiçbir veri bu rapor için kullanılabilir
+error_noReportSelected::No raporu seçildiğinde
+error_CannotDeleteReport::Rapor silinemiyor
+error_CannotDeleteChildTransaction::Bir çocuk işlem silinemiyor
+error_transactionIsDeleted::Bu işlem silinir
+error_BadTransactionChildrenSum::Tüm işlemler miktarın toplamı orijinal işlem's tutara eşit olmalıdır
+error_NoTransactionChildren::Size giriş için bir ana işlem yıkmak için en az 2 çocuk işlemleri gerek
+error_WrongTransactionChildDetails::Işlem için bilgi d doğru değil #%d, kontrol edip tekrar deneyin
+error_CSVMissingMandatoryField::CSV dosyası zorunlu alan eksik: "%s"
+error_CSVInvalidFieldsList::Alanlar listesi sağlanan geçersiz
+error_ImproperReminderDay::Lütfen geçerli bir takvim günü gösterir
+error_onlyInComMode::Bu özellik sadece ticari sürümünde olduğu avalaible
+error_adminUserUndefined::You need to define at least one admin user to secure the access to the site
+error_needsOneAdmin::Bir yönetici msut tanımlanabilir az
+error_actionIsForAdminOnly::Sadece Yöneticisi aracını bu bölümünde ulaşabilirsiniz.
+success::Değişiklik başarıyla tamamlanmıştır.
+failure::Bir hata oluştu. Lütfen tekrar deneyin.
+
+// general text and words
+text_SendButton::Gönder
+text_Total::Toplam
+text_Average::Avg
+text_Credit::Alacaklar
+text_Debit::Borçlar
+text_All::Hepsi
+text_Search::Ara
+text_SearchLong::Tüm işlemleri ara
+text_Percent::%
+text_comments::Not 
+text_commentsLong::Yorumlar
+text_id::Id
+text_amount::Mktr
+text_amountLong::Miktar
+text_payee::Alacaklar
+text_memo::Not
+text_edit::Düzenle
+text_closeEdit::Kapat
+text_operationDate::Tarih
+text_categoryName::Kat.
+text_categoryNameLong::Kategori
+text_categoryColor::Renk
+text_categoryMaxAmount::Maksimum Miktar/Ay
+text_noResult::Sonuç yok
+text_SearchResultCountString::İşlemler bulundu
+text_nullCategory::Kategorize edilmemiş
+text_uploadAllowedFileExtensions::QIF ve Text dosyası (*.qif; *.txt)
+text_pageUploadQifLoading::Dosya yükleniyor...
+text_pageUploadQifResult::Dosyanız yüklenmiştir.
+text_pageUploadQifResultCount::Yeni işlemler:
+text_autoFileResult::İşlemler anahtar kelimeleriniz kullanılarak kategorize edilmiştir.
+text_last3Month::Son 3 ay
+text_last6Month::Son 6 ay
+text_last12Month::Son 12 ay
+text_yes::Evet
+text_no::Hayır
+text_settingName::Ayarlar
+text_settingInput::Değer
+text_login::Kullanıcı adı
+text_password::Şifre
+text_new_password::Yeni şifre 
+text_current_password::Mevcut şifreniz
+text_secureAccess::Siteye güvenli erişim
+text_language::Dil
+text_currency::Para birimi
+text_setupSummary::Setup: Bu adım bütçe uygulamanızı kurmak için sadece bir kere geçilecektir..<br/><br/>Lütfen formları doldurunuz. 'Dil' ve 'Para birimi' zorunlu alanlardır.
+text_categorySettingsSetup::İşlemlerinizi sıralamak için bir ya da daha fazla kategori belirleyiniz. Seçilen renk grafikte uygulanacaktır ve maksimum miktar durumunuzu belirlemekte kullanılacaktır.
+text_keywordSettingsSetup::İşlemlerinizin özetinde bulunabilecek anahtar kelimenizi ve herbir işlemi anahtar kelimeye göre ilişkilendirmek üzere bir kategori seçiniz.
+text_keyword::Anahtar kelime
+text_newKeyword::Yeni Anahtar Kelime
+text_existingKeywords::Mevcut Anahtar Kelimeler
+text_Uncategorized::Kategorize edilmemiş
+text_SearchForString::Arama sonucunuz
+text_actionTransactions::İşlemler, Anahtar kelime ve otomatik kategorizasyon 
+text_actionTransactionRanges::Raporu
+text_actionLoadTransactions::Yük İşlem
+text_actionTransaction::Yönetmek işlemleri
+text_mustGivePasswordWarning::Hesabınızı korumak amacıyla, bu ekranda bir değişiklik yapabilmek için mevcut sifrenizi kullanmalısınız.
+text_qifFile:: Geçerli dosyalar QIF formatında ve yıl bilgisi 4 haneli (YYYY) olmalıdır.
+text_dateFormat::Tarih biçimi
+text_deleteAllRecordsinImport::Tüm işlemler siler bu ithal dosya ile bağlantılı, Emin misiniz?
+text_deleteReportSettings::Bu rapor silinecektir. Devam etmek istiyor musunuz?
+text_fileName::Dosya Adı
+text_importedTransactions::Ithal işlemleri
+Transaccións importada::Ithal işlemleri
+text_duplicatedRecords::Yinelenen kayıtları
+text_importTypeQIF::QIF
+text_importTypeQFX::QFX
+text_importTypeCSV::CSV
+text_importTypeManual::Kılavuzu
+text_importType::İthalat Tipi
+text_suggestionSuccess::Işlemlerin Found yaklaşık %d%%
+text_reportCategories::Rapor Kategori Seçimi
+text_reportRange::Rapor Tarih Aralığı
+text_reportDebitCredit::Kredi/Banka
+text_reportName::Rapor Adı
+text_editReportSettings::Değiştir Rapor Ayarları
+text_MonthRange::Ay Aralığı
+text_DateRange::Tarih Aralığı
+text_Month::Ay
+text_StartDate::Başlangıç Tarihi
+text_EndDate::Bitiş Tarihi
+text_OverallBalance::Genel Dengesi
+text_TotalTransactions::işlemler
+text_TotalCredit::Alacaklar
+text_TotalDebit::Borçlar
+text_ChooseReport::Bir rapor seçin:
+text_EditReport::Rapor için Düzenle tercihleri
+text_initialBalance::Ilk denge
+text_PresetBudget::Budget
+text_CSVFieldsDefaultOrder::Varsayılan alanları ve düzen vardır: Payee,OperationDate,Memo,Amount
+text_CSVFieldsInFirstLine::Alanları adı ilk satırda tanımlanmış?
+text_taskScheduler::İşlemler hatırlatmalar
+text_days::gün
+text_reminderDay::Hatırlatma gün
+text_reminderAlertType::Uyarı Tipi
+text_reminderDayEmailFlag::E-posta gönder
+text_reminderDaySMSFlag::SMS gönder
+text_reminderDayHint::Gün Giriş
+text_reminderDayHintCom::veya belirli bir tarih belirtin
+text_loadingPage::Lütfen bekleyin İçerik Yükleniyor...
+text_userType::Access Type
+totalMonthTasksAmount:: Toplam Tutar Hatırlatmalar
+text_modifiedby::Modified By
+text_importedby::Imported By
+text_admin_password::Admin Password
+text_Share::Paylaşmak
+text_overviewDetailed::Detailed
+text_overviewSimple::Simple
+text_overviewTimeline::Timeline
+
+// Graph
+graphTitle_overallDebitsVsCredits::Genel bakış
+graphTitle_monthlyDebitsVsCredits::Aylık 
+graphTitle_top5DebitsOverall::Genel Top 5
+graphTitle_top5DebitsMonthly::Aylık Top 5

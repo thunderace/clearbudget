@@ -1,0 +1,291 @@
+// Application title
+appTitle::clearBudget
+
+// Page titles
+pageTitle_Home::Inicio
+pageTitle_Error::Error de procesamiento
+pageTitle_Backup::Copia de seguridad de datos
+pageTitle_ReportMain::Reporte de presupuesto
+pageTitle_Overview::Visor de actividad mensual
+pageTitle_UploadQif::Subir transacciones desde archivos QIF
+pageTitle_UploadQfx::Subir transacciones desde archivos QFX
+pageTitle_FileItems::Categorizar transacciones
+pageTitle_Debits::Vista de débitos
+pageTitle_Credits::Vista de créditos
+pageTitle_Search::Resultados de la búsqueda
+pageTitle_EditItem::Editar una transacción
+pageTitle_ReportMainGraph::Vista de gráficos
+pageTitle_accountSettings::Configuraciones de cuenta
+pageTitle_defaultAccountSettings::
+pageTitle_userAccountSettings::
+pageTitle_setupAccountSettings::Bienvenido a ClearBudget - Por favor utilice esta página para configurar la aplicación.
+pageTitle_setupAccountSettingsTitle::Indique sus preferencias personales aquí
+pageTitle_editCategories::Editar categorías
+pageTitle_editKeywords::Editar palabras claves
+pageTitle_AutoFileItems::Ordenamiento automático de transacciones
+pageTitle_uploadsManagement::Archivos subidos y gestión de transacciones
+pageTitle_UploadCSV::Cargar las transacciones desde archivos CSV
+
+// navigation and links
+link_WizardStep1::Categorías
+link_WizardStep2::Transacciones
+link_WizardStep3::Palabras claves
+link_WizardStep4::Ordenamiento automático
+link_categorizeItem::Categorizar Transacciones
+link_editCategory::Editar Categorías
+link_debits::Débitos
+link_credits::Créditos
+link_overview::Vista general
+link_SetLanguage_gr-GR::Ελληνικά
+link_SetLanguage_fr-FR::Français
+link_SetLanguage_en-US::English
+link_SetLanguage_es-ES::Español
+link_SetLanguage_tr-TR::Türkçe
+link_SetLanguage_pt-BR::Português Brasileiro
+link_uploadQif::Cargar archivo QIF
+link_uploadQfx::Cargar archivo QFX
+link_uploadManual::Agregar transacciones manualmente
+link_menuAccount::Cuenta
+link_menuActions::Herramientas
+link_menuReports::Reportes
+link_ReportUnfiledCount::Transacciones no categorizadas
+link_pageBackup::Copia de seguridad
+link_pageSettings::Configuraciones
+link_autoSortLong::¿Desea ordenarlas automáticamente?
+link_autoSort::Organizar transacciones automáticamente
+link_save::Guardar
+link_back::Atrás
+link_Graph::Gráficos
+link_menuCategorizeItems::Por favor, categorice sus operaciones
+link_pickInTheList::Elija una opción...
+link_pickaDate::Rango de tiempo del reporte
+link_solveErrorLink::Haga click aquí para resolver este error
+link_editCategories::Editar Categorías
+link_editKeywords::Editar Palabras claves
+link_addKeyword::Añadir palabra clave
+link_backupDB::Realizar copia de seguridad de la base de datos
+link_logout::Salir
+link_contact::Contactar
+link_CreateAccount::Crear cuenta
+link_manageUploads::Gestionar archivos cargados
+link_checkPreviousVersion::Verificar actualizaciones
+link_cleanForm::Limpiar formulario
+link_keywordSuggestor::Sugerencias de palabras claves
+link_menuWizard::Asistente
+link_uploadCSV::Cargar archivo CSV
+link_delete::Borrar
+linkText_breakTransactionLink::Quiebre de esta transacción en el sub-transaccione
+linkText_taskReminderLink::Añadir un recordatorio sobre la base de esta transacción
+linkText_editReportSetting::Editar los ajustes del informe
+linkText_addReportSetting::Construir un nuevo informe
+linkText_deleteReportSetting::Eliminar este informe
+linkText_printReport::Imprimir este informe
+linkText_listCategoryItem::Ver los movimientos en esta categoría
+linkText_listCategoryMonthItem::Ver los movimientos en esta categoría y mes
+linkText_editCategorySettings::Editar configuración de categoría
+linkText_taskReminderEditLink::Agregar/Editar recordatorios
+linkText_taskEditLink::Editar esta transacción
+linkText_chooseReport::Elija un informe:
+link_monthlyTransactions::Mensual de transacciones Vista
+
+// Table titles
+tableTitle_debit::Débitos totales por categorías y por mes
+tableTitle_credit::Créditos totales por categorías y por mes
+tableTitle_overview::Resumen de transacciones
+tableTitle_search::Resultados de la búsqueda
+tableTitle_transactions::Lista de transacciones
+tableTitle_backup::Opciones de copia de seguridad
+tableTitle_AutoFileItems::Ordenamiento automático
+tableTitle_AddManualTransaction::Agregar transacciones manualmente
+tableTitle_breakTransaction::Distribuir las transacciones
+tableTitle_taskSchedulerAdd::Agregar/Editar recordatorios
+tableTitle_taskSchedulerEdit::Recordatorios activo
+tableTitle_MonthlyTransactions:: Mensual Transacciones Vista
+tableTitle_MonthlAvailable::Meses disponibles
+
+// Errors
+error_UploadQif::Error al cargar el archivo
+error_ImproperQifFile::El archivo no es un archivo QIF válido
+error_ImproperQifFile2::El archivo no es un archivo QIF válido (tipo 2)
+error_ImproperQifFile3::El archivo no es un archivo QIF válido (tipo 3)
+error_ImproperQifFile4::Las fechas no están formadas correctamente. Por favor, trate de cambiar el formato de la echa e intente de nuevo (tipo 4)
+error_ImproperQifFile5::La importación ha fallado ya que sólo hay registros duplicados
+error_ImproperQfxFile::El archivo no es un archivo QFX válido
+error_ImproperQfxFile2::El archivo no es un archivo QFX válido (tipo 2)
+error_ImproperQfxFile3::El archivo no es un archivo QFX válido (tipo 3)
+error_ImproperQfxFile4::El archivo no es un archivo QFX válido (tipo 4)
+error_ImproperCall::La llamada al servidor no es correcta, por favor intente de nuevo
+error_UnknownError::Ocurrió un error desconocido.
+error_NoTransactionData::Aún no existen transacciones >>> Siga el <a href="#wizard">asistente</a> para configurar adecuadamente las transacciones
+error_BadCategoryName::El nombre de la categoría no puede estar vacía
+error_BadCategoryMaxAmountPerMonth::El monto máximo debe ser un valor numérico positivo
+error_CategoryIsMandatory::Debe elegir una categoría para esta transacción
+error_GenericError::Error
+error_GenericWarning::Advertencia
+error_MissingMandatoryUserSettings::Idioma y moneda son campos obligatorios
+error_InvalidUsernameOrPassword::El nombre de usuario/dirección de correo electrónico y/o contraseña es inválido (debe tener 6 caractéres como mínimo)
+error_InvalidUsername::El nombre de usuario/dirección de correo electrónico es inválido(debe tener 6 caractéres como mínimo)
+error_InvalidPassword::La contraseña es inválida (debe tener 6 caractéres como mínimo)
+error_InvalidLanguage::The language you selected is unknown, please select a correct language
+error_PleaseLogin::Debe acreditarse para acceder a la aplicación
+error_BadUsernameOrPassword::El nombre de usuario/dirección de correo electrónico y/o contraseña es inválido
+error_UserSettingsSuccess::El cambio fue exitosamente guardado
+error_searchForString::Resultados para:
+error_BadKeyword::Las palabras claves no pueden estar vacías
+error_BadSearchTerms::El término de búsqueda debe tener 3 caractéres como mínimo o ser un número.
+error_successLogout::Ha salido de la aplicación
+error_successLogin::Ahora está logged in
+error_SaveKeywordFailure::Ha ocurrido un error mientras se guardaban los cambios. Por favor verifique si no está intentando guadar una palabra clave duplicada.
+error_YouAreLoggedOut::Ha salido de la aplicación (sesión expirada)
+setupSuccess::ClearBudget está ahora completamente lista para que la utilice... disfrute!
+error_MustGiveCurrentPassword::Por favor ingrese su contraseña actual
+error_noCategoriesYet::Por favor defina primeramente algunas categorías.
+error_ImproperDate::La fecha es inválida, por favor cambiela e intente de nuevo.
+error_ImproperAmount::Por favor ingrese un monto válido
+error_ImproperComment::Por favor ingrese un comentario válido
+error_ImproperPayee::Por favor ingrese un Beneficiario válido
+error_noSuggestionFound::No se ha encontrado ninguna sugerencia de palabras claves (sólo las palabras que aparecen en %d%% o más transacciones serán mostradas)
+error_ReportWrongName::Por favor, indique un nombre de informe válido (no puede estar vacío)
+error_ReportPickType::Por favor, elija un intervalo de fechas (fecha o el mes pasado rango)
+error_ReportWrongRange::La gama que eligió no es válido (alcance máximo es de 12 meses)
+error_ReportRangeTooLarge::La gama que eligió no es válido (alcance máximo es de 12 meses)
+error_ReportWrongDateRange::La gama que eligió no es válido (alcance máximo es de 12 meses))
+error_ReportStartDateAfterEndDate::Fecha de inicio no puede ser después de la fecha de finalización, por favor corrija y vuelva a intentarlo
+error_ReportPickDebitCredit::Sírvanse indicar las operaciones que incluyen (créditos, débitos o todos)
+error_ReportWrongCategories::Por favor, elija al menos una categoría
+error_ReportSettingsTooStrict::Su configuración es demasiado estricta y no traer ningún resultado, por favor, añadir más categorías o ampliar su rango de fechas
+error_noReportData::No hay datos disponibles para este informe (elija uno diferente o modificar la preferencia de memoria)
+error_noReportSelected::Ningún informe se selecciona
+error_CannotDeleteReport::No se puede eliminar del informe (No se puede eliminar el último informe)
+error_CannotDeleteChildTransaction::No se puede eliminar una niña transacción (Edit primero)
+error_transactionIsDeleted::Esta transacción se elimina, por favor, en primer lugar, restablecer la
+error_BadTransactionChildrenSum::La suma de todas las transacciones debe ser igual al monto de la transacción original
+error_NoTransactionChildren::Usted necesita ingresar al menos 2 transacciones para romper una sola transacción
+error_WrongTransactionChildDetails::Los detalles de la transacción #%d no es correcta, por favor revise y vuelva a intentarlo
+error_CSVMissingMandatoryField::Su archivo CSV es que falta la "%s" campo obligatorio
+error_CSVInvalidFieldsList::La lista de campos no es válido
+error_ImproperReminderDay::Por favor, indique un día de calendario válido
+error_onlyInComMode::Esta función sólo está disponible en la versión comercial
+error_adminUserUndefined::You need to define at least one admin user to secure the access to the site
+error_needsOneAdmin::Al menos uno administrador es necesario
+error_actionIsForAdminOnly::Acceso restringido a administrador.
+success::El cambio fue enviado exitosamente
+failure::Ha ocurrido un error. Por favor intente de nuevo.
+
+// general text and words
+text_SendButton::Enviar
+text_Total::Total
+text_Average::Promedio
+text_Credit::Crédito
+text_Debit::Débito
+text_All::Todos
+text_Search::Búsqueda
+text_SearchLong::Buscar todas las transacciones por
+text_Percent::%
+text_comments::Memo
+text_commentsLong::Comentarios
+text_id::Id
+text_amount::Monto
+text_amountLong::Monto
+text_payee::Beneficiario
+text_memo::Memo
+text_edit::Editar
+text_closeEdit::Cerrar
+text_operationDate::Fecha
+text_categoryName::Cat.
+text_categoryNameLong::Categoría
+text_categoryColor::Color
+text_categoryMaxAmount::Monto máximo por mes
+text_noResult::Sin resultados
+text_SearchResultCountString::Transacciones encontradas
+text_nullCategory::Sin categorizar
+text_uploadAllowedFileExtensions::QIF y archivo de texto (*.qif; *.txt)
+text_pageUploadQifLoading::Cargando archivo...
+text_pageUploadQifResult::Su archivo está ahora cargado
+text_pageUploadQifResultCount::Nuevas transacciones:
+text_autoFileResult::las transacciones fueron categorizadas utilizando sus palabras claves
+text_last3Month::Últimos 3 meses
+text_last6Month::Últimos 6 meses
+text_last12Month::Últimos 12 meses
+text_yes::Sí
+text_no::No
+text_settingName::Configuración
+text_settingInput::Valor
+text_login::Nombre de usuario
+text_password::Contraseña
+text_new_password::Nueva contraseña
+text_current_password::Contraseña actual
+text_secureAccess::Acceso seguro al sitio
+text_language::Idioma
+text_currency::Moneda
+text_setupSummary::Setup: Este es un paso obligatorio que se realiza una sola vez para configurar su herramienta de presupuesto.<br/><br/>Por favor complete los formularios. "Idioma" y "Moneda" son campos obligatorios.
+text_categorySettingsSetup::Idique una o más categorías para ordenar sus transacciones. El color será utilizado en el gráfico y el monto máximo será utilizado para mostrarle dónde se encuentra.
+text_keywordSettingsSetup::Indique palabras claves que serán encontradas en los resúmenes de sus transacciones y elija una categoría para vincular cada transacción de acuerdo a la palabra clave.
+text_keyword::Palabra clave
+text_newKeyword::Nueva palabra clave
+text_existingKeywords::Palabras clave existentes
+text_Uncategorized::Sin categorizar
+text_SearchForString::Usted buscó 
+text_actionTransactions::Transacciones, palabras claves y ordenamiento automático
+text_actionTransactionRanges::Reporte
+text_actionLoadTransactions::las operaciones de carga
+text_actionTransaction::Gestionar transacciones
+text_mustGivePasswordWarning::Para proteger su cuenta debe proveer su contraseña actual para realizar cualquier cambio en esta pantalla
+text_qifFile::Los archivos válidos son aquellos en formato QIF con el año en cuatro dígitos
+text_dateFormat::Formato de fecha
+text_deleteAllRecordsinImport::Todas las transacciones vinculadas con este archivo importado serán borradas. ¿Desea continuar?
+text_deleteReportSettings::Este informe será eliminado. ¿Desea continuar?
+text_fileName::Nombre de archivo
+text_importedTransactions::Transaccións importada
+text_importedTransaction::Transacción importada
+text_duplicatedRecords::Registro duplicado
+text_importTypeQIF::QIF
+text_importTypeQFX::QFX
+text_importTypeCSV::CSV
+text_importTypeManual::Manual
+text_importType::Tipo de importación
+text_suggestionSuccess::Encontrado en aproximadamente %d%% transacciones
+text_reportCategories::Selección de categoría del Informe
+text_reportRange::Rango de la fecha del informe
+text_reportDebitCredit::Crédito/Débito
+text_reportName::El nombre del informe
+text_editReportSettings::Editar la configuración del informe
+text_MonthRange::Mes Rango
+text_DateRange::Fecha Rango
+text_Month::Meses
+text_StartDate::la fecha de inicio
+text_EndDate::la fecha de finalización
+text_OverallBalance::Suma
+text_TotalTransactions::Transacciones
+text_TotalCredit::Crédito
+text_TotalDebit::Débito
+text_ChooseReport::Elija un informe:
+text_EditReport::Modificar preferencias informe
+text_initialBalance::Inicial suma
+text_PresetBudget::Presupuesto
+text_CSVFieldsDefaultOrder::La lista predeterminada campos es beneficiario, OperationDate, Memo, Cantidad
+text_CSVFieldsInFirstLine::Nombre de campos definidos en la primera línea
+text_taskScheduler::Transacciones recordatorios
+text_days::día
+text_reminderDay::Días de aviso
+text_reminderAlertType::Tipo de alerta
+text_reminderDayEmailFlag::Enviar por correo electrónico
+text_reminderDaySMSFlag::Enviar sms
+text_reminderDayHint::De entrada el día para este recordatorio
+text_reminderDayHintCom::o indicar una fecha concreta
+text_loadingPage::Carga de contenido, por favor espere...
+text_userType::Access Type
+totalMonthTasksAmount::Monto Total de los recordatorios
+text_modifiedby::Modified By
+text_importedby::Imported By
+text_admin_password::Admin Password
+text_Share::Compartir
+text_overviewDetailed::Detailed
+text_overviewSimple::Simple
+text_overviewTimeline::Timeline
+
+// Graph
+graphTitle_overallDebitsVsCredits::General
+graphTitle_monthlyDebitsVsCredits::Mensual
+graphTitle_top5DebitsOverall::General: 5 principales
+graphTitle_top5DebitsMonthly::Mensual: 5 principales

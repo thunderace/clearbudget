@@ -1,0 +1,94 @@
+<?php
+/**
+* Add a transaction manualy
+*
+* @author       Fabrice Douteaud <admin@clearbudget.net>
+* @package      snippets
+* @access       public
+*/
+
+/***********************************************************************
+
+  Copyright (C) 2008  Fabrice Douteaud (admin@clearbudget.net)
+
+    This file is part of ClearBudget.
+
+    ClearBudget is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    ClearBudget is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with ClearBudget.  If not, see <http://www.gnu.org/licenses/>.
+
+
+************************************************************************/
+//prevent direct access
+if(!defined('ENGINEON')) die('Direct access forbidden');
+
+$debitFlag = 'checked';
+$creditFlag = '';
+if($id != false && $transaction->debit == 0) {
+  $debitFlag = '';
+  $creditFlag = 'checked';
+}
+?>
+<script type="text/javascript">
+	$(function() {
+	  $.datepicker.setDefaults($.extend({showMonthAfterYear: false}, $.datepicker.regional['<?php echo $lang;?>']));
+		$("#trnDate").datepicker({dateFormat: 'yy-mm-dd', showOn: 'button', buttonImage: 'style/icons/calendar.gif', buttonImageOnly: true});
+	});
+	</script>
+
+<h2><img src="style/icons/table_go.png"/> <?php echo $keys->tableTitle_AddManualTransaction; ?></h2>
+<form id="addManualTransaction" onSubmit="addManualTransaction(); return false">
+<?php if($id!=false) {?><input type="hidden" name="id" value="<?php echo $id;?>"/><?php }?>
+<table class="tableReport">
+<tr>
+  <td style="width:330px;vertical-align: text-top">
+    <?php echo $keys->text_operationDate;?><br/><input type="text" <?php if(!$transaction->editable) echo 'disabled'; ?> tabindex="1" size="10" id="trnDate" name="trnDate" value="<?php echo $transaction->operationDate;?>"/><br/>
+    <?php echo $keys->text_amountLong;?><br/><input tabindex="2" <?php if(!$transaction->editable) echo 'disabled'; ?> type="text" name="trnAmount" id="trnAmount" size="11" value="<?php echo $transaction->amount;?>"/> <?php echo class_currency::getCurrencySymbol();?>
+    &nbsp;&nbsp;<?php echo $keys->text_Credit;?><input tabindex="3" <?php if(!$transaction->editable) echo 'disabled'; ?> type="radio" name="trnDebit" <?php echo $creditFlag;?> id="trnDebit" value="0"/>
+    <?php echo $keys->text_Debit;?><input tabindex="4" type="radio" <?php if(!$transaction->editable) echo 'disabled'; ?> name="trnDebit" id="trnDebit" <?php echo $debitFlag;?> value="1"/><br/>
+    <?php echo $keys->text_payee;?><br/><input tabindex="5" <?php if(!$transaction->editable) echo 'disabled'; ?> type="text" size="90" name="trnPayee" id="trnPayee" value="<?php echo $transaction->payee;?>"/><br/>
+    <?php echo $keys->text_memo;?><br/><input tabindex="6" <?php if(!$transaction->editable) echo 'disabled'; ?> type="text" size="90" name="trnMemo" id="trnMemo" value="<?php echo $transaction->memo;?>"/><br/>
+    <?php echo $keys->text_commentsLong;?><br/><input tabindex="7" type="text" size="90" name="trnComments" id="trnComments" value="<?php echo $transaction->comments;?>"/><br/>
+    <?php echo $keys->text_importedby;?><br/><input disabled type="text" size="90" value="<?php echo $transaction->importedBy;?>"/><br/>
+    <?php echo $keys->text_modifiedby;?><br/><input disabled type="text" size="90" value="<?php echo $transaction->modifiedBy;?>"/><br/>
+    <br/>
+  </td>
+  <td style="width:250px;vertical-align: text-top">Category<br/>
+    <select size=12 tabindex="8" name="trnCategory" class="categorySelector" style="width:240px;"">
+<?php  foreach($categories as $categoryId) {
+    echo '<option value="'.$categoryId.'"';
+    if($id != false) {
+      if($transaction->category == $categoryId) echo 'selected';
+      }
+    elseif($categoryId == 1) echo 'selected';
+    echo '>'.$report->getCategoryName($categoryId).'</option>';
+    }
+?>
+    </select>
+  </td>
+</tr>
+<tr>
+  <td style="text-align: center;">
+  <span class="hidden" id="loadingSpan"><img  src="style/icons/icon_Loading.gif"/></span>
+  <span class="hidden" id="resultDiv"></span>
+  </td>
+  <td style="text-align: center;">
+  <input type="image" src="style/icons/disk.png" tabindex="9" value="<?php echo $keys->link_save; ?>">
+<?php if($id != false) {
+  echo '&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:clearDiv(\''.$toDiv.'\');"><img  src="style/icons/cross.png" alt="Close"/></a>';
+  }
+?>
+  </td>
+</tr>
+</table>
+</form>
+<br/>

@@ -1,0 +1,90 @@
+/**
+ *
+ *    Copyright (C) 2008  Fabrice douteaud (fdouteaud@gmail.com)
+ *
+ *    This file is part of ClearBudget.
+ *
+ *    ClearBudget is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    ClearBudget is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with ClearBudget.  If not, see <http://www.gnu.org/licenses/>.
+ *
+**/
+
+/**
+ * Main body
+ */
+html, body {
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.bgFrame12 { background: url(topBarMenu.jpg) repeat-x left top; }
+
+a {
+    color: #FF6917;
+}
+
+
+.link1 {
+	text-decoration: none;
+	font: bold 11px Arial, Helvetica, sans-serif;
+	color: #4E4E4E;
+}
+
+/**
+ * the header with the title
+ */
+#header {
+   background: #656565;
+   color: #F6AD53;
+   border-color: #000000;
+}
+#header h1 a {
+   color: #F6AD53;
+}
+#header ul a {
+    border-color: #656565;
+    background-color: #F6AD53;
+    color: #36393D;
+}
+
+#clock {
+  background: #656565;
+  }
+
+select {
+   background-color: #ffffff;
+   color: inherit;
+}
+
+/**
+ * Submit button definitions
+ */
+input[type=button] {
+    color: Black;
+    background: #B3DE77;
+    border-color: #ffffff;
+    border-bottom-color: #dddddd;
+    border-right-color: #dddddd;
+}
+
+/**
+ * Footer definitions
+ */
+#footer {
+   background: #656565;
+   color: #F6AD53;
+   border-color: #000000;
+}
+#footer, #footer a, #footer a:visited {
+   color: #F6AD53;
+}

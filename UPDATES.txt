@@ -1,0 +1,125 @@
+Ver. 0.9.7
+- Addition of Brazilian traduction thanks to Flávio Veras
+- Strenghten login cookie security
+- Strenghten variables cleanup (add strip_tags)
+- Optimized Printing (fits all in one page on most printers)
+- Multi-user functionnality to manage families (only read or read/write capabilities for now)
+- New simpler overview page
+- Fix QFX upload where checks were being ignored
+- Paging and sorting in the transaction view
+- Added missing Kenyan Shilling in the currency list
+
+Ver. 0.9.6
+- Complete re-design of the user interface
+- Easier navigation with support for browser back button and bookmarking
+- Easier manual entry in forms with support for Tab and Enter keys
+- Month transactions overview screen
+- Possibility to delete a keyword
+- Improved keyword suggestion tool
+
+Ver. 0-9-5
+- Add a new check in setup process to look for JSON support in PHP
+- Clean SQL query to create the t_items table
+- Clean all SQL queries to be SQLite 3 compatible (no more IF NOT EXIST)
+- Remove setup screen, replaced by default values in the SQL setup
+- Randomize the DB name even more than before to avoid folder scanning
+- Display total monthly amount of preset budgets on category setup screen
+- Display preset budget values on the overview screen
+- Overspending in average on defined budget is color coded on the overview screen 
+- Break transaction in up to 5 sub-transactions
+- Auto update now makes DB backup before any changes
+- Some minor cosmetic changes
+- Under the hood improvements (dedicated classes and factories)
+- Navigation optimization with mouseover tips
+- Simple transactions reminder
+- Version update now saves the previous database as backup
+- Code is made compatible with PHP 5.3.0
+- CSV file importer
+
+Ver. 0-9-3
+- Fix bug in overall balance calculation where deleted transactions were still active
+- Added the ISO 4217 list of currencies as available currencies
+- Changed the currency display to be generic
+- Added a way to set an initial balance in the user preferences
+
+Ver. 0-9-1
+- Fix bug in Spanish missing the translation in Spanish :-)
+- Added customizable reports to allow full flexibility in the reporting
+- Fix the datepicker to display the correct language
+- Change the Spanish code from SP to ES to follow ISO codes
+- Added more debuging in DB class (to detect why select do not work - SQLITE can be tricky sometimes)
+- Fix view of category and search to display only the transactions following the selecte report constraints
+
+Ver. 0-8-5
+- Fix bug on QFX file import being more flexible on the file format
+- Fix bug on file upload to avoid error on file too big
+- Improved search with 'results as you type' feature
+- Cosmetic polish (new table row highlight)
+- New report graphics (caregory comparison as line charts, credits Vs debits globaly, credit Vs debits monthly)
+- Wizard fo dummies
+
+Ver. 0-8-2
+- Fix bug where transaction categorization to null category was allowed
+- Fix bug where new manual entries without category where not displayed anywhere
+
+Ver. 0-8-1
+- Add support to QFX file format for transactions upload
+- Add support for manual transactions input
+- Add British Pound as a currency
+- Fixed a bug where data was aggredated by month only...even if not on the same year
+- Delete and restore of transactions implemented (in the import management screen)
+- Add keyword suggestion tool getting the most recurent words in the transactions summary
+
+Ver. 0-7-2
+- Track uploaded files with unique ID and a way to roll-back
+- Add a choice for QIF upload to manage date in the US or European way (MM/DD/YYYY or DD/MM/YYYY)
+- Detect if choosen format date is valid. If not, the upload is canceled and the user can try again with a different format
+- List all the uploaded files
+- View all transactions imported for each uploaded files
+- Delete all transactions related with a specific file import
+- Prevent categorization to be null (removed the 'pick in the list' choice)
+- New Link to check if a new version is released
+- Prevent keyword creation if no categories are defined yet
+- List of all imported transactions right after the import
+
+Ver. 0-7-1
+- New logo
+- Turkish translation is now done
+- New print button on the main report page with optimized style
+- Setup process checks for: PHP version, PDO, SQLITE, DB and folder writable
+- Optimized style for printing the report page
+- Report supports time ranges as: all years with activities, last 3 month, last 6 month, last 12 month
+- New tag cloud of category spending with detailed summary
+- Remove the livequery plugin to JQuery as JQuery 1.3 support live atachements
+- Complete navigation redesign
+- Layout redesign of most part
+- Color scheme redesign
+- Added search box on the search result page
+- Merge analyticals data with graphicals on same page
+- Upgraded JQUERY to latest version (1.3)
+- Redesign of the transaction edition process (no more navigation with edition on the spot)
+- Fixed some locale setting issues (should now put the correct date format according to language)
+- Secure the login cookie to make it more secure
+- Login is limited to 900s of inactivity (15mns) - inactivity logs the user out automaticaly and clear its cookie
+- Secure the application by not storing the password in clear text anymore
+- Removed category setup in the setup phase (was too confusing and necessary)
+- Refactored the setup process to be integrated in the application
+- Refactored the user variable input as to be able to add filters to improve security
+- Added check on action input parameter to exclude any URL hack
+- Added control to prevent direct access to internal files
+- Removed blank DB from package
+- Added a DB setup in case of installation from scratch or upgrade
+- New setup process checking some system compatibility
+
+
+Ver. 0-6-1
+- Fix the warning for over spending (now displays the cell in Red)
+- Add command to stop any web crawler (prevent the site from being indexed)
+- Fixed the date range selection
+- Fixed warning if no credit or debit for a specific month
+- Block all access to the DB (only backup link can access it)
+- Fixed database backup procedure to be more secure (see previous point)
+- Added missing translation key in the search page
+- Fixed search to return the correct category for each transaction
+- Renamed top 5 graph
+- New ability to go directly to a specific month and category transactions list from the Debits table

@@ -1,0 +1,291 @@
+// Application title
+appTitle::clearBudget
+
+// Page titles
+pageTitle_Home::Homepage
+pageTitle_Error::Processing Error
+pageTitle_Backup::Data Backup
+pageTitle_ReportMain::Budget Report
+pageTitle_Overview::Monthly Activity Overview
+pageTitle_UploadQif::Upload transactions from QIF files
+pageTitle_UploadQfx::Upload transactions from QFX files
+pageTitle_FileItems::Categorize Transactions
+pageTitle_Debits::Debits Overview
+pageTitle_Credits::Credits Overview
+pageTitle_Search::Search results
+pageTitle_EditItem::Edit a transaction
+pageTitle_ReportMainGraph::Graphs Overview
+pageTitle_accountSettings::Account Settings
+pageTitle_defaultAccountSettings::Default Settings
+pageTitle_userAccountSettings::Users Preferences
+pageTitle_setupAccountSettings::Welcome to ClearBudget - Please use this page to setup the application.
+pageTitle_setupAccountSettingsTitle::Indicate your personal preferences below
+pageTitle_editCategories::Edit categories
+pageTitle_editKeywords::Edit keywords
+pageTitle_AutoFileItems::Transactions auto-sorting
+pageTitle_uploadsManagement::Uploaded files and transactions management
+pageTitle_UploadCSV::Upload transactions from CSV files
+
+// navigation and links
+link_WizardStep1::Categories
+link_WizardStep2::Transactions
+link_WizardStep3::Keywords
+link_WizardStep4::Auto-Sort
+link_categorizeItem::Categorize Transactions
+link_editCategory::Edit Categories
+link_debits::Debits
+link_credits::Credits
+link_overview::Overview
+link_SetLanguage_gr-GR::Ελληνικά
+link_SetLanguage_fr-FR::Français
+link_SetLanguage_en-US::English
+link_SetLanguage_es-ES::Español
+link_SetLanguage_tr-TR::Türkçe
+link_SetLanguage_pt-BR::Português Brasileiro
+link_uploadQif::Load QIF file
+link_uploadQfx::Load QFX file
+link_uploadManual::Add Transactions Manualy
+link_menuAccount::Account
+link_menuActions::Tools
+link_menuReports::Reports
+link_ReportUnfiledCount::Uncategorized transactions
+link_pageBackup::Backup
+link_pageSettings::Settings
+link_autoSortLong::Do you want to auto sort them out?
+link_autoSort::AutoSort Transactions
+link_save::Save
+link_back::Back
+link_Graph::Charts
+link_menuCategorizeItems::Please categorize your operations
+link_pickInTheList::Pick one...
+link_pickaDate::Reports time range
+link_solveErrorLink::Click here to solve this error
+link_editCategories::Edit Categories
+link_editKeywords::Edit Keywords
+link_addKeyword::Add Keyword
+link_backupDB::Backup the database
+link_logout::Logout
+link_contact::Contact
+link_CreateAccount::Create account
+link_manageUploads::Manage Uploaded files
+link_checkPreviousVersion::Check for Updates
+link_cleanForm::Clean Form
+link_keywordSuggestor::Keyword suggestions
+link_menuWizard::Wizard
+link_uploadCSV::Load CSV file
+link_delete::Delete
+linkText_breakTransactionLink::Break this transaction in sub-transactions
+linkText_taskReminderLink::Add a reminder based on this transaction
+linkText_editReportSetting::Edit this report settings
+linkText_addReportSetting::Build a new report
+linkText_deleteReportSetting::Delete this report settings
+linkText_printReport::Print this report
+linkText_listCategoryItem::See the transactions in this category
+linkText_listCategoryMonthItem::See the transactions in this category for this month
+linkText_editCategorySettings::Edit this category settings
+linkText_taskReminderEditLink::Add/Edit reminders
+linkText_taskEditLink::Edit this transaction
+linkText_chooseReport::Choose a report:
+link_monthlyTransactions::Montly Transaction View
+
+// Table titles
+tableTitle_debit::Total Debits per Categories and per Month
+tableTitle_credit::Total Credits per Categories and per Month
+tableTitle_overview::Transactions summary
+tableTitle_search::Search results
+tableTitle_transactions::Transactions list
+tableTitle_backup::Backup options
+tableTitle_AutoFileItems::Auto-sorting
+tableTitle_AddManualTransaction::Add/Edit Transactions Manualy
+tableTitle_breakTransaction::Break transactions
+tableTitle_taskSchedulerAdd::Add/Edit reminders
+tableTitle_taskSchedulerEdit::Active Reminders
+tableTitle_MonthlyTransactions:: Monthly Transactions View
+tableTitle_MonthlAvailable::Available Months
+
+// Errors
+error_UploadQif::Error while loading the file
+error_ImproperQifFile::File is not a valid QIF file
+error_ImproperQifFile2::File is not a valid QIF file (type 2)
+error_ImproperQifFile3::File is not a valid QIF file (type 3)
+error_ImproperQifFile4::Dates are not formed correctly. Please try to change the date format and try again (type 4)
+error_ImproperQifFile5::Import failed as there are only duplicate records
+error_ImproperQfxFile::File is not a valid QFX file
+error_ImproperQfxFile2::File is not a valid QFX file (type 2)
+error_ImproperQfxFile3::File is not a valid QFX file (type 3)
+error_ImproperQfxFile4::File is not a valid QFX file (type 4)
+error_ImproperCall::Call to the server is not correct, please try again
+error_UnknownError::An unknown error occured.
+error_NoTransactionData::There are no transactions yet >>> Follow the <a href="#wizard">wizard</a> to properly setup transactions
+error_BadCategoryName::The category name can not be empty
+error_BadCategoryMaxAmountPerMonth::The maximum amount has to be a positive numeric value
+error_CategoryIsMandatory::You must choose a category for this transaction
+error_GenericError::Error
+error_GenericWarning::Warning
+error_MissingMandatoryUserSettings::Language and Currency are both mandatory fields
+error_InvalidUsernameOrPassword::The username/email address and/or password is invalid (must be 6 characters long minimum)
+error_InvalidUsername::The username/email address is invalid (must be 6 characters long minimum)
+error_InvalidPassword::The password is invalid (must be 6 characters long minimum)
+error_InvalidLanguage::The language you selected is unknown, please select a correct language
+error_PleaseLogin::You must login to access the application
+error_BadUsernameOrPassword::Username/email adress and/or password is invalid
+error_UserSettingsSuccess::Change successfully saved
+error_searchForString::Results for:
+error_BadKeyword::Keywords can not be empty
+error_BadSearchTerms::The search terms must be 3 characters long minimum or be a number.
+error_successLogout::You are now logged out
+error_successLogin::You are now logged in
+error_SaveKeywordFailure::An error occured while saving. Please check if you are not trying to save a duplicated keyword.
+error_YouAreLoggedOut::You are now logged out (session expired)
+setupSuccess::ClearBudget is now fully ready for you to use...Enjoy!!!
+error_MustGiveCurrentPassword::Please input your current password
+error_noCategoriesYet::Please define some categories in the first place
+error_ImproperDate::The date is invalid, please change and try again
+error_ImproperAmount::Please enter a valid amount
+error_ImproperComment::Please enter a valid comment
+error_ImproperPayee::Please enter a valid payee
+error_noSuggestionFound::No keyword suggestions found (only the words appearing in %d%% or more of your transactions will be shown)
+error_ReportWrongName::Please indicate a valid report name (can't be empty)
+error_ReportPickType::Please choose a date range (dates or last month range)
+error_ReportWrongRange::The range you chose is invalid (maximum range is 12 month)
+error_ReportRangeTooLarge::The range you chose is invalid (maximum range is 12 month)
+error_ReportWrongDateRange::The date range you chose is invalid (maximum range is 12 month)
+error_ReportStartDateAfterEndDate::Start date can't be after End date, please correct and try again
+error_ReportPickDebitCredit::Please indicate what transactions to include (Credits, Debits or all)
+error_ReportWrongCategories::Please indicate at least one category
+error_ReportSettingsTooStrict::Your settings are too strict and does not bring back any results, please add more categories or extend your date range
+error_noReportData::There are no data available for this report (choose a different one or edit the report preference)
+error_noReportSelected::No report is selected
+error_CannotDeleteReport::Cannot delete report (You cannot delete the last report)
+error_CannotDeleteChildTransaction::Cannot delete a child transaction (Edit it first)
+error_transactionIsDeleted::This transaction is deleted, please restore it first
+error_BadTransactionChildrenSum::The sum of all sub-transactions amount must equal the original transaction amount
+error_NoTransactionChildren::You need to input at least 2 child transactions to break a master transaction down
+error_WrongTransactionChildDetails::The details for transaction #%d are not correct, please check and try again
+error_CSVMissingMandatoryField::Your CSV file is missing the "%s" mandatory field
+error_CSVInvalidFieldsList::The fields list provided is invalid
+error_ImproperReminderDay::Please indicate a valid calendar day (1 to 31)
+error_onlyInComMode::This feature is only available in the commercial version
+error_adminUserUndefined::You need to define at least one admin user to secure the access to the site
+error_needsOneAdmin::At least one Admin user needs to be defined
+error_actionIsForAdminOnly::Only Administrator can access this section of the tool.
+success::Change successfully submited
+failure::An error occured. Please try again.
+
+// general text and words
+text_SendButton::Send
+text_Total::Total
+text_Average::Avg
+text_Credit::Credit
+text_Debit::Debit
+text_All::All
+text_Search::Search
+text_SearchLong::Search all transactions for
+text_Percent::%
+text_comments::Memo
+text_commentsLong::Comments
+text_id::Id
+text_amount::Amnt
+text_amountLong::Amount
+text_payee::Payee
+text_memo::Memo
+text_edit::Edit
+text_closeEdit::Close
+text_operationDate::Date
+text_categoryName::Cat.
+text_categoryNameLong::Category
+text_categoryColor::Color
+text_categoryMaxAmount::Maximum Amount/Month
+text_noResult::No Result
+text_SearchResultCountString::Transactions Found
+text_nullCategory::Uncategorised
+text_uploadAllowedFileExtensions::QIF and Text file (*.qif; *.txt)
+text_pageUploadQifLoading::Loading file...
+text_pageUploadQifResult::Your file is now loaded
+text_pageUploadQifResultCount::New transactions:
+text_autoFileResult::transactions were categorized using your keywords
+text_last3Month::Past 3 Month
+text_last6Month::Past 6 Month
+text_last12Month::Past 12 Month
+text_yes::Yes
+text_no::No
+text_settingName::Setting
+text_settingInput::Value
+text_login::User name
+text_password::Password
+text_new_password::New Password
+text_current_password::Current Password
+text_secureAccess::Secure access to the site
+text_language::Language
+text_currency::Currency
+text_setupSummary::Setup: This a mandatory step done only once to setup your budget tool.<br/><br/>Please fill in the forms. 'Language' and 'Currency' are mandatory information.
+text_categorySettingsSetup::Indicate one or more categories in order to sort your transactions. The color will be used in graph and the max amount will be use to show you where you are.
+text_keywordSettingsSetup::Indicate Keywords to be found in your transactions summary and choose a category to link each transactions to according to the Keyword.
+text_keyword::Keyword
+text_newKeyword::New Keyword
+text_existingKeywords::Existing Keywords
+text_Uncategorized::Uncategorized
+text_SearchForString::Your search for 
+text_actionTransactionRanges::Report
+text_actionTransaction::Manage Transactions
+text_actionLoadTransactions::Load Transactions
+text_actionCategorisation::Categorisation/Keywords
+text_mustGivePasswordWarning::To protect your account, you must provide your current password to perform any change on this screen
+text_qifFile::Valid files are under the QIF format with year on 4 digits
+text_dateFormat::Date format
+text_deleteAllRecordsinImport::All transactions linked with this imported file will be deleted. Do you want to continue?
+text_deleteReportSettings::This report will be deleted. Do you want to continue?
+text_fileName::File Name
+text_importedTransactions::Imported transactions
+text_importedTransaction::Transaction saved
+text_duplicatedRecords::Duplicated record
+text_importTypeQIF::QIF
+text_importTypeQFX::QFX
+text_importTypeCSV::CSV
+text_importTypeManual::Manual
+text_importType::Import Type
+text_suggestionSuccess::Found in about %d%% transactions
+text_reportCategories::Report Category Selection
+text_reportRange::Report Date Range
+text_reportDebitCredit::Credit/Debit
+text_reportName::Report Name
+text_editReportSettings::Edit Report Settings3
+text_MonthRange::Month Range
+text_DateRange::Date Range
+text_Month::Month
+text_StartDate::Start Date
+text_EndDate::End Date
+text_OverallBalance::Overall Balance
+text_TotalTransactions::Transactions
+text_TotalCredit::Credit
+text_TotalDebit::Debit
+text_ChooseReport::Choose a report:
+text_EditReport::Edit preferences for report
+text_initialBalance::Initial balance
+text_PresetBudget::Budget
+text_CSVFieldsDefaultOrder::The default fields and order are Payee,OperationDate,Memo,Amount
+text_CSVFieldsInFirstLine::Fields name defined on first line?
+text_taskScheduler::Transactions reminders
+text_days::days
+text_reminderDay::Reminder day
+text_reminderAlertType::Alert Type
+text_reminderDayEmailFlag::Send me email
+text_reminderDaySMSFlag::Send me sms
+text_reminderDayHint::Input the day of your montly reminder
+text_reminderDayHintCom::or indicate a specific date
+text_loadingPage::Loading content, please wait...
+text_userType::Access Type
+totalMonthTasksAmount:: Total Reminders Amount
+text_modifiedby::Modified By
+text_importedby::Imported By
+text_admin_password::Admin Password
+text_Share::Share
+text_overviewDetailed::Detailed
+text_overviewSimple::Simple
+text_overviewTimeline::Timeline
+
+// Graph
+graphTitle_overallDebitsVsCredits::Overall
+graphTitle_monthlyDebitsVsCredits::Monthly
+graphTitle_top5DebitsOverall::Overall Top 5
+graphTitle_top5DebitsMonthly::Monthly Top 5

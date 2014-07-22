@@ -1,0 +1,110 @@
+- Add PDF export (as the print button but as PDF)
+- Netvibes widget to view overall situation on budgets and to upload new data
+- iPhone client to display current situation
+- Export in excel (for those who would like to go back to stone age)
+- add recurrent flag with recurrent period for transactions
+- detect recurring payment => select * from (SELECT count(*) as count, memo, amount FROM t_items ?where debit = 1? group by amount)  where count>1 order by count DESC
+- Identify investment from spending
+- Plugin mechanism to allow external developpers to add extra features
+- Categories with sub-categories
+- Print monthly view
+
+
+SECURITY:
+- escape all outputs with htmlentities
+- add session params to all forms (to avoid CSRF) - maybe should take it from a global var in JS and all form processing should return a new one as part of $return
+
+0-9-7
+- escape all input params with strip_tags
+- page (next-previous) on listItems if too many
+- Add category limit in enveloppe view
+- Remove Language file from the main application and make it a downloadable option
+
+0-9-6
+- DONE - Remove all actions in the isReady function
+- DONE - Add SMS & email sending for reminders for COM users
+- DONE - Better functionnality integration to clearbudget.net
+- DONE - Modify print on home page for new design
+- DONE - Add a month overview with all credits/debits transactions and a summary
+- DONE - Redo complete design as to follow overall design from clearbudget.net
+- DONE - Edit manual transations entry
+- DONE - Support tab key in most forms
+- DONE - Converts most links to forms as to support enter key as submit
+- DONE - Fixed bug where decimal of initial balance were ignored
+- DONE - Add possibility to delete a keyword
+- DONE - Improve keyword suggestion tool as to allow direct addition of keyword and as to see where keyword is used
+
+0-9-5
+- DONE - When entering budgets for each category, a total of all the budget values at the bottom of the screen.  Basically just adding up the budget column to display the total monthly budget.
+- DONE - An extra column in Overview, showing your set budget
+- DONE - Color code the AVG column in overview to show if over budget on average
+- DONE - Add validation on QIF/QFX import on necessary values
+- DONE - Add CSV import tool following citibank format (that is the only one we now)
+- DONE - Add support to split transactions in sub-transactions
+- DONE - Sdd reminder of futur payment (next week and next month for example)
+
+0-9-1
+- DONE - Allow cutom time range for report (choose start and end date)
+- DONE - Limit category listing AND search listing to the limit month chosen (requires a change to the view in the DB)
+- DONE - DEBUG graph of monthly debit/credit
+
+0-8-5
+- DONE - Fix bug on QFX file import being more flexible on the file format
+- DONE - Fix bug on file upload to avoid error on file too big
+- DONE - Improved search with 'results as you type' feature
+- DONE - Cosmetic polish (new table row highlight)
+- DONE - New report graphics (caregory comparison as line charts, credits Vs debits globaly, credit Vs debits monthly)
+- DONE - Add setup wizard (step 1: add transactions, step 2: create categories, step 3: create keywords)
+
+0-8-2
+- DONE - Fix bug where transaction categorization to null category was allowed
+- DONE - Fix bug where new manual entries without category where not displayed anywhere
+
+0-8-1
+- DONE - Add QFX upload capabilities
+- DONE - Add British Pound as a currency
+- DONE - Fix bug where Clearbudget always goes back to the currency set during setup
+- DONE - Cleanup in QIF and QFX parser (a bit more safer)
+- DONE - Fix data aggregation bug where month only was check (month of all year where added)
+- DONE - capabilities to add transactions manualy (for cash only transaction for example)
+- DONE - being able to 'delete' a transaction (delete should hide that transaction as to be able to undelete)
+- DONE - Keyword suggestions tool 
+
+0-7-2
+- DONE - Show list of transactions after import
+- DONE - Show existing transaction prior to 0-7-2 grouped as per the create date
+- DONE - Add flag to tell if QIF dates are under US or Europe format
+- DONE - Being able to roll-back a file import
+- DONE - Being able to list all transaction imported by a file upload
+- DONE - Edit keyword when no categories are setup should display an error (no point to setup keyword without categories!)
+- DONE - Add a 'check for new version' features (more a warning than anything else)
+ 
+0-7-1
+- DONE - Check scrolling on Transaction edition screen (should not scroll to top)
+- DONE - Add a print button on main page
+- DONE - Optimize speed by doing setup only on main loading page (i.e.: when not in Ajax mode)
+- DONE - Default the language on the setup page based on browser language
+- DONE - Default the setup to secure access to site
+- DONE - Check if DB folder is writable on setup
+- DONE - Display the loading gif after changing report time range
+- DONE - Tag cloud based on category amount with small details box
+- DONE - Special CSS to optimize printing the report page
+- DONE - Secure cookie to avoid hacking
+- DONE - Secure access to DB with htaccess
+- DONE - Optimize the backup functionnality to prevent direct access to DB
+- DONE - Secure access to any file by validating user input and action parameter
+- DONE - Add unique identifier in Cookie (Default is 0)
+- DONE - Date range should not be from today's date but from last transaction date
+- DONE - Redo overall design to allow for larger tables
+- DONE - (part of redesign of 0-7-1) Saving a transaction should prompt to redirect to the list (credit or debit) for this category
+- DONE - (part of redesign of 0-7-1) Transaction edit screen could be done in a modal window (to investigate)
+- DONE - Print # of transactions on top of list items
+
+0-6-1
+- DONE - Implement 'something' about the monthly maximum amount for categories
+- DONE - Navigation from Credit to Credit transation list should list only Credit transation (Same for debits) and for the category
+- DONE - Edit key word page for auto sort
+- DONE - Finish cleanup of property keys
+- DONE - Graph with google chart
+- DONE - Rename 'item' in 'transaction'
+- DONE - Add graph on overview page (maybe remove the graph page itself)

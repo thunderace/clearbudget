@@ -1,0 +1,131 @@
+/**
+ *
+ *    Copyright (C) 2008  Fabrice douteaud (fdouteaud@gmail.com)
+ *
+ *    This file is part of ClearBudget.
+ *
+ *    ClearBudget is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    ClearBudget is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with ClearBudget.  If not, see <http://www.gnu.org/licenses/>.
+ *
+**/
+.tableReport {
+  font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  width: 100%;
+  }
+  
+.tableReport caption {
+	padding: 0 0 2px 20px;
+	width: 100%;	 
+	font: italic 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align: left;
+	color: #000000;
+  }
+
+.tableReport th {
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #6D929B;
+	border: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 2px 2px 2px 6px;
+	background: #CAE8EA url(bg_header.jpg) repeat-x;
+}
+.tableReport th.nobg {
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #C1DAD7;
+	background: #E6EAE9;
+
+}
+.tableReport tr.deletedRow td {
+  border: 1px solid #FF0000;
+  padding: 2px 2px 2px 6px;
+	border: 1px solid #FFCCCC;
+	color: #D9D9D9;
+	background: #B9B9B9;
+}
+.tableReport tr.highlightedRow td {
+  background: #99FF99;
+}
+
+.tableReport tr.parentCategory td {
+  background: #fff;
+  font: bold 15px Verdana, Arial, Helvetica, sans-serif;
+  color: #000;
+}
+.tableReport tr.parentCategory input {
+     font: bold 15px Verdana, Arial, Helvetica, sans-serif;
+     border: 3px solid #C1DAD7;
+     font-size:  100%;
+     background: #fff;
+     color: #000;
+     font-weight: bold;
+}
+.tableReport tr.parentCategory select {
+     font: bold 15px Verdana, Arial, Helvetica, sans-serif;
+     font-size:  100%;
+     background: #a9a9a9;
+     color: #fff;
+     font-weight: bold;
+}
+
+.tableReport td {
+  border: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 2px 2px 2px 6px;
+	color: #6D929B;
+}
+.tableReport td.alt {
+	background: #E6EAE9;
+	
+}
+.tableReport td.category {
+  padding: 2px 2px 2px 6px;
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #FFFFFF url(bullet2.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica,
+	sans-serif;
+}
+.tableReport td.total {
+  text-align: center;
+	border: 1px solid #C1DAD7;
+	background: #FFFFFF url(bullet1.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica,
+	sans-serif;
+}
+.tableReport tr:hover{color:lime;background:red;}
+
+/* tablesorter */
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
